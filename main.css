@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
+  color: rgb(146, 83, 178);
+  text-align: center;
+  background-color: rgba(135, 211, 0, 0.4);
+}
+.main-heading {
+  padding: 5% 0;
+}
+.search-input {
+  width: 60%;
+  padding: 1%;
+  border: 1px solid #9253B2;
+}
+.result {
+  margin-top: 3%;
+  display: inline-block;
+  width: 100%;
+}
+.result .top-3 {
+  padding: 3% 0 1%;
+}
+.nearest-info {
+  display: inline-block;
+  padding: 3%;
+  width: 50%;
+  text-align: left;
+  box-sizing: border-box;
+}
+.nearest-info ol {
+  margin-left: 10%;
+}
+.nearest-info li {
+  font-size: 1rem;
+  margin: 6px 0;
+  background: #fff;
+  padding: 2px 10px;
+}
+.nearest-info li a {
+  text-decoration: none;
+  color: rgb(146, 83, 178);
+}
+.nearest-info li a:hover {
+  text-decoration: underline;
+}
+.nearest-info li span {
+
+}
+.nearest-info .station-name {
+
+}
+.nearest-info .distance-to {
+  float: right;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+.nearest-info .line-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  margin-top: 2px;
+  float: right;
+  margin-left: 15px;
+}
+.nearest-info .line-color.purple {
+  background-color: rgba(146, 83, 178, 1);
+}
+.nearest-info .line-color.green {
+  background-color: rgba(135, 211, 0, 1);
+}
+.first-nearest-info-full {
+  float: right;
+  padding: 3%;
+  width: 50%;
+  text-align: left;
+  box-sizing: border-box;
+}
+.first-nearest-info-full .label-value {
+  font-size: 1rem;
+  margin: 6px 0;
+  background: #fff;
+  padding: 2px 10px;
+  margin-left: 0.5%;
+}
+.first-nearest-info-full .label-value .value {
+  float: right;
+}
+.on-map {
+  position: relative;
+  top: 5px;
+  text-align: left;
+  background: #fff;
+  z-index: 2;
+  display: inline;
+  float: left;
+  left: 5px;
+  font-size: 0.7rem;
+  padding: 5px;
+}
+#bingMap {
+
+}

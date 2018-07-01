@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Namma Metro - Nearest Metro stop finder</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=AqGUtcJhg4k0enNxc5zAHB_IhL5yXw9JtvXGebuEb-6oUowftVIkyef2XEK6pVUv'></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+</head>
+<body onload='loadMapScenario();'>
+  <h2 class="main-heading">Namma Metro - Nearest Metro stop finder</h2>
+
+  <input type="text" name="search-input" class="search-input" value="Enter your location" autofocus>
+
+  <div class="result">
+    <div class="nearest-info">
+      <p class="top-3">Top 3 nearest metro stop</p>
+      <ol>
+        <li>
+          <a href="javascript:void(0)">
+            <span class="station-name">Attiguppe</span>
+            <span class="line-color purple"></span>
+            <span class="distance-to">1.5km away</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <span class="station-name">Baiyyappanahalli</span>
+            <span class="line-color purple"></span>
+            <span class="distance-to">2.5km away</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <span class="station-name">Banashankari</span>
+            <span class="line-color green"></span>
+            <span class="distance-to">3.5km away</span>
+          </a>
+        </li>
+      </ol>
+    </div>
+    <div class="first-nearest-info-full">
+      <p class="top-3 details-about">Details about the selected stop</p>
+      <div class="label-value station-name">
+        <span class="label">Station Name: </span>
+        <span class="value">Attiguppe</span>
+      </div>
+      <div class="label-value distance-to">
+        <span class="label">Distance to station: </span>
+        <span class="value">1.5 km</span>
+      </div>
+      <div class="label-value terminal-station">
+        <span class="label">Is it Terminal Station: </span>
+        <span class="value">No</span>
+      </div>
+      <div class="label-value transfer-station">
+        <span class="label">Is it Transfer Station: </span>
+        <span class="value">No</span>
+      </div>
+      <div class="label-value functional-status">
+        <span class="label">Is it functional: </span>
+        <span class="value">Yes</span>
+      </div>
+      <div class="label-value opened-on">
+        <span class="label">Station Opened on: </span>
+        <span class="value">16-Nov-2015</span>
+      </div>
+      <div class="label-value layout">
+        <span class="label">Type of Layout: </span>
+        <span class="value">Elevated</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="on-map">Your location/Searched location on Map</p>
+  <div id='bingMap' style='width: 100vw; height: 100vh;'></div>
+
+</body>
+</html>
