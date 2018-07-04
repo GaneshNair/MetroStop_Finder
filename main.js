@@ -1,18 +1,20 @@
-var map;
+$(window).load(function(){
+  var map;
+  loadMapScenario(); //Load Map - Default
+});
+
 function loadMapScenario() {
   map = new Microsoft.Maps.Map(document.getElementById('bingMap'), {
     center: new Microsoft.Maps.Location(12.976599, 77.586950),
     mapTypeId: Microsoft.Maps.MapTypeId.arieal,
     zoom: 11
   });
-
-  showPosition();
+  getLocation(); //Get user position
 }
 
-var map = document.getElementById('bingMap');
 function getLocation() {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
+        navigator.geolocation.getCurrentPosition(showPosition); //Show user position
     } else {
         map.innerHTML = "Geolocation is not supported by this browser. Enter current location manually.";
     }
